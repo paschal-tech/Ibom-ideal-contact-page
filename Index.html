@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Ibom Ideal Construction Ltd</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Ibom Ideal Construction Ltd</h1>
+    <p>Building Your Dreams with Strength and Precision</p>
+  </header>
+
+  <section class="contact-info">
+    <div class="info-card">
+      <h3>📞 Call Us</h3>
+      <p>+234-800-123-4567</p>
+    </div>
+    <div class="info-card">
+      <h3>📧 Email Us</h3>
+      <p>info@ibomidealconstructionLtd.com</p>
+    </div>
+    <div class="info-card">
+      <h3>⏰ Office Hours</h3>
+      <p>Mon - Fri: 8:00am - 6:00pm</p>
+    </div>
+  </section>
+
+  <section class="map-section">
+    <h2>Find Us</h2>
+    <iframe src="https://www.google.com/maps/embed?..." allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <section class="contact-form">
+    <h2>Get in Touch</h2>
+    <form id="contactForm">
+      <input class="text" id="name" name="name" required
+      placeholder="Full Name">
+      <input type="email" id="email" name="email" required
+      placeholder="Email">
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" required
+            placeholder="Phone Number"
+      <label for="project">Project Type:</label>
+      <select id="project" name="project" required>
+        <option value="">--Select--</option>
+        <option value="residential">Residential Building</option>
+        <option value="commercial">Commercial Building</option>
+        <option value="renovation">Renovation</option>
+      </select>
+
+      <label for="budget">Estimated Budget:</label>
+      <input type="number" id="budget" name="budget" placeholder="₦" required>
+
+      <label for="message">Project Details:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <label>
+        <input type="checkbox" id="consent" required>
+        I consent to having my information used to contact me.
+      </label>
+
+      <button type="submit">Submit</button>
+      <p id="formMessage" class="hidden"></p>
+    </form>
+  </section>
+
+  <button id="backToTop">⬆ Back to Top</button>
+
+  <footer>
+    <p>&copy; 2025 Ibom Ideal Construction Ltd. All rights reserved.</p>
+  </footer>
+
+  <script src=".scriptjs"></script>
+</body>
+</html>
